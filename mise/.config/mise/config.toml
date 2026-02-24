@@ -1,0 +1,13 @@
+[tools]
+bat = "latest"
+duckdb = "latest"
+fzf = "latest"
+btop = "latest"
+uv = "latest"
+fastfetch = "latest"
+terraform = "latest"
+go = "latest"
+awscli = { version = "latest", symlink_bins = "true" }
+node = "latest"
+gemini-cli = "latest"
+pre-commit = "latest"
