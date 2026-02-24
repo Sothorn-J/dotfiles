@@ -1,4 +1,2 @@
-tap "teamookla/speedtest"
 brew "mise"
 brew "pixi"
-brew "teamookla/speedtest/speedtest"
