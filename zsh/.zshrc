@@ -19,7 +19,8 @@ source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # add aliases
-alias ll="ls -alh"
+alias ll="eza -alh"
+alias ls="eza --all --icons"
 alias python="python3"
 alias pip="pip3"
 

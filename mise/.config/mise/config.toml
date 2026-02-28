@@ -11,3 +11,6 @@ awscli = { version = "latest", symlink_bins = "true" }
 node = "latest"
 gemini-cli = "latest"
 pre-commit = "latest"
+tlrc = "latest"
+eza = "latest"
+rust = "latest"
