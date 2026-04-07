@@ -4,7 +4,6 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 # add path
-export PATH=$HOME/.local/bin:$PATH
 
 # typing thai in GEMINI CLI
 export LANG=en_US.UTF-8
@@ -19,10 +18,13 @@ source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # add aliases
-alias ll="eza -alh"
-alias ls="eza --all --icons"
+alias ll="eza --icons -alh"
+alias ls="eza --icons"
 alias python="python3"
 alias pip="pip3"
+
+# docker to podman
+export DOCKER_HOST=unix:///run/user/$(id -u)/podman/podman.sock
 
 # starship
 eval "$(starship init zsh)"
