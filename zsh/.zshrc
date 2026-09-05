@@ -18,19 +18,19 @@ source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # add aliases
-alias ll="eza --icons -alh"
-alias ls="eza --icons"
+alias ll="eza --icons auto -alh"
+alias ls="eza --icons auto"
 alias python="python3"
 alias pip="pip3"
 
 # docker to podman
 export DOCKER_HOST=unix:///run/user/$(id -u)/podman/podman.sock
 
-# starship
-eval "$(starship init zsh)"
-
 # homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+
+# starship
+eval "$(starship init zsh)"
 
 # mise
 eval "$(mise activate zsh)"
